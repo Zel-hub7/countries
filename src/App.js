@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router";
 import Details from "./components/details";
 
+
 const App = () => {
   return (
     <div>
