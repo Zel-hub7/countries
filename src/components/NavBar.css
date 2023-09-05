@@ -1,0 +1,21 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(68, 23, 23);
+  padding: 10px;
+}
+.navigation p {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+.buttons {
+  color: white;
+  font-size: 25px;
+  margin-top: 1%;
+}
+.logo {
+    font-size: 50px;
+    color: white;
+    margin-top: 1%;
+}
