@@ -20,14 +20,21 @@
 .country-name-details,
 .country-details-off {
   text-align: center;
+  padding: 10px;
 }
 
 .flex-container {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
   background-color: rgb(0, 83, 121);
   border-radius: 40px;
   color: white;
   border: 1px solid #4468b0;
+  max-height: fit-content;
+  padding: 10px;
+  margin-left: 2%;
+  margin-bottom: 10px;
 }
 
 .details-country {
@@ -47,6 +54,8 @@
 
 .details-container {
   background-color: rgb(0, 59, 86);
+  height: 100vh;
+
 }
 
 .not-found {
