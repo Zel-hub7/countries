@@ -1,7 +1,7 @@
 .back-btn {
   color: white;
   border: none;
-  background-color: #00405f;
+  background-color: #4468b0;
   font-size: 30px;
   cursor: pointer;
 }
@@ -24,14 +24,14 @@
 
 .flex-container {
   padding: 10px;
-  background: linear-gradient(to bottom, rgba(34,193,195,1) , rgba(0,0,0,1) );
+  background-color: rgb(0, 83, 121);
   border-radius: 40px;
   color: white;
   border: 1px solid #4468b0;
 }
 
 .details-country {
-    background: linear-gradient(to bottom, rgb(11, 58, 59) , rgb(0, 59, 86) );
+  background-color: rgb(0, 59, 86);
   height: 8rem;
   align-items: center;
   display: flex;
@@ -46,10 +46,10 @@
 }
 
 .details-container {
-    background: linear-gradient(to bottom, rgba(34,193,195,1) , rgba(0,0,0,1) );
+  background-color: rgb(0, 59, 86);
 }
 
 .not-found {
   text-align: center;
-  background-color: #00405f;
+  color: #355087;
 }

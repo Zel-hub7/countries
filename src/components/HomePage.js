@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCountries } from "../Redux/countries/countriesSlice";
-import './HomePage.css';
+import "./HomePage.css";
 import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
@@ -9,7 +9,6 @@ const HomePage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // Dispatch the fetchCountries action when the component mounts
     dispatch(fetchCountries());
   }, [dispatch]);
 
@@ -34,19 +33,16 @@ const HomePage = () => {
       <div className="country">
         <div className="search"></div>
         <div className="countriesList">
-          
-         
           <ul className="lists">
             {data.map((country) => (
               <li key={country.countryID}>
-                 <NavLink to = {`/details/${country.countryID}`}>
-                <h3>{country.name}</h3>
-                <img src={country.flag} alt={`${country.name} Flag`} />
+                <NavLink to={`/details/${country.countryID}`}>                  
+                  <img className = 'flags' src={country.flag} alt={`${country.name} Flag`} />
+                  <h2 className="name">{country.name}</h2>
                 </NavLink>
               </li>
             ))}
           </ul>
-         
         </div>
       </div>
     </div>
