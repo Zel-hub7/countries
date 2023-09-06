@@ -13,7 +13,7 @@ const Details = () => {
   if (!countryDetails) {
     return (
       <div>
-        <p>Country not found</p>
+        <p className='not-found'>Country not found</p>
         <button
           type="button"
           onClick={() => navigation(-1)}
