@@ -23,7 +23,8 @@
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
       "no-shadow": "off",
-      "max-len": "off"
+      "max-len": "off",
+      "react/prop-types": "off"
     },
     "overrides": [
       {
