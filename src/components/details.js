@@ -1,7 +1,7 @@
-import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { BiArrowBack } from "react-icons/bi";
+import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { BiArrowBack } from 'react-icons/bi';
 import './details.css';
 
 const Details = () => {

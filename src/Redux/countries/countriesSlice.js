@@ -1,32 +1,31 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 
-const url = "https://restcountries.com/v3.1/all";
+const url = 'https://restcountries.com/v3.1/all';
 
 const initialState = {
   data: [],
   loading: false,
-  error: "",
+  error: '',
 };
-const getData = (data) =>
-  data.map((country) => ({
-    countryID: uuidv4(),
-    name: country.name.common,
-    officialName: country.name.official,
-    capital: country.capital,
-    language: country.languages,
-    region: country.region,
-    currency: country.currencies,
-    timezone: country.timezones,
-    continent: country.continents,
-    flag: country.flags.png,
-    area: country.area,
-    population: country.population,
-  }));
+const getData = (data) => data.map((country) => ({
+  countryID: uuidv4(),
+  name: country.name.common,
+  officialName: country.name.official,
+  capital: country.capital,
+  language: country.languages,
+  region: country.region,
+  currency: country.currencies,
+  timezone: country.timezones,
+  continent: country.continents,
+  flag: country.flags.png,
+  area: country.area,
+  population: country.population,
+}));
 
 export const fetchCountries = createAsyncThunk(
-  "countries/fetchCountries",
+  'countries/fetchCountries',
   async () => {
     try {
       const res = await axios.get(url);
@@ -35,11 +34,11 @@ export const fetchCountries = createAsyncThunk(
     } catch (error) {
       throw Error(error);
     }
-  }
+  },
 );
 
 export const countriesSlice = createSlice({
-  name: "countries",
+  name: 'countries',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
