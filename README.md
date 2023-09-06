@@ -61,7 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://dev--phenomenal-pony-c46c4d.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +91,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
- git clone https://github.com/meryemsanem/countries-capstone-project.git
+ git clone https://github.com/Zel-hub7/countries.git
 ```
 
 ### Install
@@ -153,9 +153,9 @@ npm test
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Meryem Sanem Küçükbayram**
+👤 **Zelalem Yohannes**
 
-- GitHub: [@meryemsanem](https://github.com/Zel-hub7)
+- GitHub: [@Zelalem](https://github.com/Zel-hub7)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
