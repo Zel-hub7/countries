@@ -12,6 +12,20 @@
     color: white;
     text-decoration: none;
   }
+  .search {
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+  }
+  input {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(0, 0, 70);
+  }
  
   .lists {
     display: grid;
