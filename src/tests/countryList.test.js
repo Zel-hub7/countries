@@ -10,7 +10,7 @@ describe('CountryListControls Component', () => {
         setSearch={() => {}}
         sortOrder="asc"
         handleSort={() => {}}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -23,7 +23,7 @@ describe('CountryListControls Component', () => {
         setSearch={setSearchMock}
         sortOrder="asc"
         handleSort={() => {}}
-      />
+      />,
     );
 
     const inputElement = getByPlaceholderText('Search Country');
@@ -40,7 +40,7 @@ describe('CountryListControls Component', () => {
         setSearch={() => {}}
         sortOrder="asc"
         handleSort={handleSortMock}
-      />
+      />,
     );
 
     const sortButton = getByText('Sort Ascending');
