@@ -1,10 +1,4 @@
-.back-btn {
-  color: white;
-  border: none;
-  background-color: #4468b0;
-  font-size: 30px;
-  cursor: pointer;
-}
+/*
 
 .container img {
   width: 30%;
@@ -31,7 +25,6 @@
   border-radius: 40px;
   color: white;
   border: 1px solid #4468b0;
-  max-height: fit-content;
   padding: 10px;
   margin-left: 2%;
   margin-bottom: 10px;
@@ -55,10 +48,67 @@
 .details-container {
   background-color: rgb(0, 59, 86);
   height: 100vh;
-
 }
 
 .not-found {
+  font-size: 40px;
   text-align: center;
-  color: #355087;
+  color: red;
+  margin-top: 5%;
+} */
+
+.details-navBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.back-btn {
+  color: white;
+  border: none;
+  background-color: #4468b0;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.header {
+  color: white;
+  font-family: gill sans, sans-serif;
+}
+
+.country-details {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4468b0;
+  color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.flex-container > .country-details:nth-child(odd) {
+  background-color: #4468b0;
+}
+
+.flex-container > .country-details:nth-child(even) {
+  background-color: rgb(0, 83, 121);
+}
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+.upper h2 {
+  color: white;
+  margin-bottom: 10px;
 }
