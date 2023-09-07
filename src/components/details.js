@@ -1,16 +1,15 @@
-import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { AiFillSetting } from "react-icons/ai";
-import { BiMicrophone } from "react-icons/bi";
-import { BiArrowBack } from "react-icons/bi";
-import "./details.css";
+import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { AiFillSetting } from 'react-icons/ai';
+import { BiMicrophone, BiArrowBack } from 'react-icons/bi';
+import './details.css';
 
 const Details = () => {
   const { countryId } = useParams();
   const { data } = useSelector((state) => state.countries);
   const countryDetails = data.find(
-    (country) => country.countryID === countryId
+    (country) => country.countryID === countryId,
   );
   const navigation = useNavigate();
 
@@ -34,16 +33,21 @@ const Details = () => {
       <div className="details-navBar">
         <button
           type="button"
-          onClick={() => navigation("/")}
+          onClick={() => navigation('/')}
           className="back-btn"
         >
           <BiArrowBack />
         </button>
 
-        <h1 className="header">{countryDetails.name}&apos;s Details</h1>
+        <h1 className="header">
+          {countryDetails.name}
+          &apos;s Details
+        </h1>
         <div className="buttons">
-          <BiMicrophone data-testid="microphone-button" />{" "}
-          <AiFillSetting data-testid="settings-button" />{" "}
+          <BiMicrophone data-testid="microphone-button" />
+          {' '}
+          <AiFillSetting data-testid="settings-button" />
+          {' '}
         </div>
       </div>
       <div className="details-container">
